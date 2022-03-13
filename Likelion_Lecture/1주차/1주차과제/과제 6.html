@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폼</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        form fieldset{
+            margin-bottom: 30px;
+        }
+        form legend {
+            front-size : 30px;
+            front-weight: 600;
+        }
+        .reg {
+            front-size : 14px;
+            width: 110px;
+            color: forestgreen;
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+        }
+        form ul li {
+            list-style: none;
+            margin: 15px 0;
+            front-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <font face="맑은 고딕">
+    <h1>멋사 수강 신청</h1>
+    <form>
+        <fieldset>
+            <legend><b>수강 과목</b></legend>
+            <ul>
+                <li>
+                    <label class="reg" for="time">HTML5+CSS</label>
+                    <input type="text" value="오전 9:00~11:00"readonly>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><b>신청자</b></legend>
+            <ul>
+                <li>
+                    <label class="reg"for="name">이름</label>
+                    <input type="text" required>
+                </li>
+                <li>
+                    <label class="reg"for="number">학번</label>
+                    <input type="text" placeholder="하이픈없이 입력">
+                </li>
+                <li>
+                    <label class="reg"for="class">학과</label>
+                    <select size="1" id="class">
+                        <option value="math"selected>컴퓨터공학과</option>
+                        <option value="math">수학과</option>
+                        <option value="math">산업공학과</option>
+                        <option value="math">전기전자공학과</option>
+                        <option value="math">화학공학과</option>
+                        <option value="math">기계공학과</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><B>교재 주문</B></legend>
+            <ul>
+                <li>
+                    <label class="reg"for="number">교재</label>
+                    <input type="text" value="1" readonly>
+                </li>
+                <li>
+                    <label class="reg"for="number">워크시트</label>
+                    <input type="text" value="1" readonly>
+                </li>
+                <li>
+                    <label class="reg"for="number">단체주문</label>
+                    <input type="text" size="10" minlength="4" maxlength="15" placeholder="10">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <ul>
+                <li>
+                    <form>
+                        <input type="submit" value="신청하기">
+                        <input type="submit" value="다시쓰기">
+                    </form>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    </font>
+</body>
+</html>

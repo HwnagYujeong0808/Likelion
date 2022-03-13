@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html lang="kr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: rgb(43, 74, 109);
+            }
+
+            .mainbody {
+                background-color: black;
+                width: 500px;
+                height: auto;
+                font-size: large;
+                border: 1px solid black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: (-50%, -50%);
+                text-align: center;
+            }
+            .list {
+                color: white;
+                font-size: 50px;
+                position: relative;
+                text-align: center;d
+            }
+            input {
+                margin: auto;
+            }
+            input[type="text"],[type="password"]{
+                background-color: black;
+                border-radius: 25px;
+                border: 2px solid blue;
+                display: block;
+                width: 300px;
+                height: 50px;
+                text-align: center;
+            }
+            input[type="submit"]{
+                background-color: black;
+                border-radius: 25px;
+                height: 35px;
+                width: 150px;
+                border: 2px solid green;
+                text-align: center;
+                display: block;
+                color: white;
+            }
+            input[type="text"]:focus,[type="password"]:focus{
+                border : 2px solid green;
+                width: 350px;
+
+            }
+            input[type="submit"]:hover{
+                background-color: green;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="mainbody">
+            <p class="list">LOGIN</p>
+           <form action="">
+               <input type="text" placeholder="Username"><br>
+               <input type="password" placeholder="Password"><br>
+               <input type="submit" placeholder="Login">
+           </form>
+        </div>
+    </body>
+
+    </html>
